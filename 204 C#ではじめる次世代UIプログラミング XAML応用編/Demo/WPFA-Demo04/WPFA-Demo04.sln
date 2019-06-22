@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo04-01-DataTrigger", "Demo04-01-DataTrigger\Demo04-01-DataTrigger.csproj", "{87E27D5A-E571-4F57-B26A-129F348A2366}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo04-02-ButtonTemplate", "Demo04-02-ButtonTemplate\Demo04-02-ButtonTemplate.csproj", "{6347ac26-bbcc-4d19-812d-ab0f16e88066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo04-03-AddVisualState", "Demo04-03-AddVisualState\Demo04-03-AddVisualState.csproj", "{b6be2e50-9290-4ee4-9cb4-305da7359d5e}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6347AC26-BBCC-4D19-812D-AB0F16E88066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6347AC26-BBCC-4D19-812D-AB0F16E88066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6347AC26-BBCC-4D19-812D-AB0F16E88066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6347AC26-BBCC-4D19-812D-AB0F16E88066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E27D5A-E571-4F57-B26A-129F348A2366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E27D5A-E571-4F57-B26A-129F348A2366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E27D5A-E571-4F57-B26A-129F348A2366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E27D5A-E571-4F57-B26A-129F348A2366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6BE2E50-9290-4EE4-9CB4-305DA7359D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6BE2E50-9290-4EE4-9CB4-305DA7359D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6BE2E50-9290-4EE4-9CB4-305DA7359D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6BE2E50-9290-4EE4-9CB4-305DA7359D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

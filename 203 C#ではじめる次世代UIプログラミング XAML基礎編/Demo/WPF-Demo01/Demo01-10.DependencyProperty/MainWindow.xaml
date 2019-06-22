@@ -1,0 +1,27 @@
+﻿<Window x:Class="DependencyPropertyDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:DependencyPropertyDemo"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <local:MyLines />
+    </Window.DataContext>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBox Text="{Binding LineNumber}" FontSize="46" Grid.RowSpan="2">
+        </TextBox>
+        <Slider Grid.Row="1" RenderTransformOrigin="0,0" Maximum="{Binding MaxValue}" LargeChange="10" SmallChange="1" Value="{Binding LineNumber}" Minimum="{Binding MinValue}">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+    </Grid>
+</Window>

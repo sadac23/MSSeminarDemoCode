@@ -1,0 +1,12 @@
+﻿<Window x:Class="Demo03_02.StackPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel Orientation="Vertical">
+        <Button Content="Button1" FontSize="20" Margin="5" />
+        <Button Content="Button2" FontSize="20" Margin="5" />
+        <Button Content="Button3" FontSize="20" Margin="5" />
+        <Button Content="Button4" FontSize="20" Margin="5" />
+        <Button Content="Button5" FontSize="20" Margin="5" />
+    </StackPanel>
+</Window>

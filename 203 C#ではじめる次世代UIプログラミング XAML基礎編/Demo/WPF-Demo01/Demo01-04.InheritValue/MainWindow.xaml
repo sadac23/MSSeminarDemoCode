@@ -1,0 +1,16 @@
+﻿<Window x:Class="Demo01_04.InheritValue.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" TextBlock.FontSize="40">
+    <StackPanel>
+        <Button>
+            <TextBlock>ボタン１</TextBlock>
+        </Button>
+        <Button>
+            <TextBlock>ボタン２</TextBlock>
+        </Button>
+        <Button TextBlock.FontSize="20">
+            <TextBlock>ボタン３</TextBlock>
+        </Button>
+    </StackPanel>
+</Window>

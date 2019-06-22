@@ -1,0 +1,27 @@
+﻿<Window x:Class="Demo03_02_MultiTrigger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+	<Window.Resources>
+		<Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+			<Style.Triggers>
+				<MultiTrigger>
+					<MultiTrigger.Conditions>
+						<Condition Property="IsEnabled" Value="True"/>
+						<Condition Property="IsMouseOver" Value="True"/>
+					</MultiTrigger.Conditions>
+					<Setter Property="Foreground" Value="Red"/>
+				</MultiTrigger>
+			</Style.Triggers>
+		</Style>
+	</Window.Resources>
+    <Grid>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="3*"/>
+    		<RowDefinition/>
+    	</Grid.RowDefinitions>
+    	<Button Content="Multi Trigger" Style="{DynamicResource ButtonStyle1}" FontSize="48" IsEnabled="{Binding IsChecked, ElementName=checkBox}"/>
+    	<CheckBox x:Name="checkBox" Content="IsEnabled 切り替え" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26.667" VerticalContentAlignment="Center" />
+        
+    </Grid>
+</Window>

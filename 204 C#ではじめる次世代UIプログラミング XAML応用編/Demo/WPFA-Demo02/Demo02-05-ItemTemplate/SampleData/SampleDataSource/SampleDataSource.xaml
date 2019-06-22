@@ -1,0 +1,19 @@
+﻿<!--
+      *********    このファイルを編集しないでください     *********
+      このファイルはデザイン ツールにより作成されました。
+      このファイルに変更を加えるとエラーが発生する場合があります。
+-->
+<SampleData:SampleDataSource xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.SampleDataSource">
+	<SampleData:SampleDataSource.Collection>
+		<SampleData:Item Name="Class curae donec nam" Image="SampleDataSource_Files\imae02.JPG"/>
+		<SampleData:Item Name="Cras duis maecenas" Image="SampleDataSource_Files\image01.JPG"/>
+		<SampleData:Item Name="Etiam aliquam nunc" Image="SampleDataSource_Files\image03.JPG"/>
+		<SampleData:Item Name="Aenean fusce integer amet" Image="SampleDataSource_Files\image04.jpg"/>
+		<SampleData:Item Name="Sed quisque dis" Image="SampleDataSource_Files\image05.JPG"/>
+		<SampleData:Item Name="Mauris ante" Image="SampleDataSource_Files\imae02.JPG"/>
+		<SampleData:Item Name="Arcu est hac" Image="SampleDataSource_Files\image01.JPG"/>
+		<SampleData:Item Name="Leo diam lorem nullam" Image="SampleDataSource_Files\image03.JPG"/>
+		<SampleData:Item Name="Aptent auctor" Image="SampleDataSource_Files\image04.jpg"/>
+		<SampleData:Item Name="Congue cursus mus nec" Image="SampleDataSource_Files\image05.JPG"/>
+	</SampleData:SampleDataSource.Collection>
+</SampleData:SampleDataSource>

@@ -1,0 +1,12 @@
+﻿<Window x:Class="Demo01_05.RoutingEvent.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525"
+        PreviewMouseRightButtonDown="Window_PreviewMouseRightButtonDown" MouseRightButtonDown="Window_MouseRightButtonDown">
+    <StackPanel VerticalAlignment="Center"  PreviewMouseRightButtonDown="StackPanel_PreviewMouseRightButtonDown" MouseRightButtonDown="StackPanel_MouseRightButtonDown">
+        <Button FontSize="40" PreviewMouseRightButtonDown="Button_PreviewMouseRightButtonDown" MouseRightButtonDown="Button_MouseRightButtonDown" >ボタン１</Button>
+        <Button FontSize="40" PreviewMouseRightButtonDown="Button_PreviewMouseRightButtonDown" MouseRightButtonDown="Button_MouseRightButtonDown" >ボタン２</Button>
+        <Button FontSize="40" PreviewMouseRightButtonDown="Button_PreviewMouseRightButtonDown" MouseRightButtonDown="Button_MouseRightButtonDown" >ボタン３</Button>
+    </StackPanel>
+
+</Window>

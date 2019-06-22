@@ -1,0 +1,30 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Demo04_01_DataTrigger" x:Class="Demo04_01_DataTrigger.MainWindow"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Window.Resources>
+        <DataTemplate x:Key="DataTemplate1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock TextWrapping="Wrap" Text="{Binding ID}" Margin="10"/>
+                <TextBlock TextWrapping="Wrap" Text="{Binding Name}" Foreground="#FF06914B" Margin="10" Grid.Column="1" x:Name="txtName"/>
+            </Grid>
+        	<DataTemplate.Triggers>
+        		<DataTrigger Binding="{Binding ID}" Value="11">
+        			<Setter Property="Foreground" Value="Red" TargetName="txtName" />
+				</DataTrigger>
+        	</DataTemplate.Triggers>
+        </DataTemplate>
+    </Window.Resources>
+    <Window.DataContext>
+        <local:MyStations/>
+    </Window.DataContext>
+    <Grid>
+        <ListBox ItemsSource="{Binding Mode=OneWay}" ItemTemplate="{DynamicResource DataTemplate1}"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="Demo02_02.TextBlock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    
+    <!-- 
+        TextBlockは少量のフローコンテンツを表示する軽量コントロール 
+        複数行のテキストやそれ以外のドキュメントの表示には
+        FlowDocument : TextBlockの次に軽量なフローコンテンツ用コントロール,
+        FlowDocumentScrollViewer : １ページずつ表示の表示モードで最適化されたコントロール,
+        FlowDocumentPageViewer : 豊富なフローコンテンツの表示をサポート、コントロールはヘビーウェイトとなる
+        などの利用を推奨
+    -->
+    <!--
+    <FlowDocument>
+        <Paragraph>あいうえお</Paragraph>
+        <List>
+            <ListItem>
+                <Paragraph>かきくけこ</Paragraph>
+            </ListItem>
+        </List>
+        
+    </FlowDocument>
+    -->
+    
+    <TextBlock FontSize="30" TextWrapping="Wrap">
+        Windows Presentation Foundation<LineBreak />
+        <Bold>Windows Presentation Foundation</Bold><LineBreak />
+        <Italic>Windows Presentation Foundation</Italic>
+        <Hyperlink>Windows Presentation Foundation</Hyperlink>
+    </TextBlock>
+    
+    
+</Window>

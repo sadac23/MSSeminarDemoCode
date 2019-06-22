@@ -1,0 +1,26 @@
+﻿<Window x:Class="Demo04_04.Style.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style x:Key="TextBlockStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="40" />
+            <Setter Property="Foreground" Value="Blue" />
+        </Style>
+        <Style x:Key="TextBlockBaseOnStyle" 
+               BasedOn="{StaticResource TextBlockStyle}" 
+               TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Green" />
+            <Setter Property="Text" Value="継承されたスタイル" />
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="60" />
+            <Setter Property="Foreground" Value="Red" />
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <TextBlock Style="{StaticResource TextBlockStyle}" >テキスト</TextBlock>
+        <TextBlock Style="{StaticResource TextBlockBaseOnStyle}" />
+        <TextBlock >テキスト</TextBlock>
+    </StackPanel>
+</Window>

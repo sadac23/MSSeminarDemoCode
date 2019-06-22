@@ -1,0 +1,13 @@
+﻿<Window x:Class="Demo01_03.MarkupExtension.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Demo01_03.MarkupExtension"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBlock 
+            Text="{local:Hello}" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            FontSize="40" />
+    </Grid>
+</Window>

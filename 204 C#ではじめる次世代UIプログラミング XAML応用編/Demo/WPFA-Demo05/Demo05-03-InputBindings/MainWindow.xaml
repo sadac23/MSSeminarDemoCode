@@ -1,0 +1,30 @@
+﻿<Window x:Class="Demo05_03_InputBindings.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Demo05_03_InputBindings"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.CommandBindings>
+        <CommandBinding 
+            Command="local:MainWindow.HelloCommand" 
+            Executed="CommandBinding_Executed" />
+    </Window.CommandBindings>
+    <Window.InputBindings>
+        <!--コントロール+Hを割り当て-->
+        <KeyBinding 
+            Command="{x:Static local:MainWindow.HelloCommand}" 
+            Key="H" 
+            Modifiers="Control" />
+    </Window.InputBindings>
+    <Grid>
+        <Button x:Name="btn" FontSize="40"
+                Command="{x:Static local:MainWindow.HelloCommand}">
+            <Button.CommandBindings>
+                <CommandBinding
+                    Command="local:MainWindow.HelloCommand"
+                    Executed="CommandBinding_Executed_Button" />
+            </Button.CommandBindings>
+            コマンドバインディング
+        </Button>
+
+    </Grid>
+</Window>

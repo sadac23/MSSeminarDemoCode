@@ -1,0 +1,60 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="WpfApplication2.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+	<Window.Resources>
+		<Style x:Key="CheckBoxStyle1" TargetType="{x:Type CheckBox}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type CheckBox}">
+						<Grid Background="{TemplateBinding Background}">
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CheckStates">
+									<VisualStateGroup.Transitions>
+										<VisualTransition GeneratedDuration="0:0:1" To="Checked">
+											<VisualTransition.GeneratedEasingFunction>
+												<BounceEase EasingMode="EaseOut"/>
+											</VisualTransition.GeneratedEasingFunction>
+										</VisualTransition>
+										<VisualTransition From="Checked" GeneratedDuration="0:0:1" To="Unchecked">
+											<VisualTransition.GeneratedEasingFunction>
+												<BounceEase EasingMode="EaseOut"/>
+											</VisualTransition.GeneratedEasingFunction>
+										</VisualTransition>
+									</VisualStateGroup.Transitions>
+									<VisualState x:Name="Checked">
+										<Storyboard>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path">
+												<EasingDoubleKeyFrame KeyTime="0" Value="-90"/>
+											</DoubleAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0,1"/>
+											</PointAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+									<VisualState x:Name="Unchecked"/>
+									<VisualState x:Name="Indeterminate"/>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<Path x:Name="path" Data="M0.5,29.515862 L1.9475316,29.551586 C20.08039,30.448711 34.500001,45.082771 34.500001,63.003998 34.500001,65.894516 34.124883,68.699524 33.419561,71.375168 L33.092305,72.5 10.330666,72.5 10.926973,71.918495 C11.500947,71.303963 12.020822,70.633812 12.471276,69.923744 12.91192,69.229134 13.289834,68.490372 13.593308,67.725807 13.891641,66.974159 14.120561,66.191055 14.272682,65.396797 14.423387,64.609909 14.500001,63.805191 14.500001,63.004005 14.500001,62.152725 14.4134,61.297226 14.24341,60.463097 14.071626,59.620193 13.813028,58.790726 13.476967,57.998856 13.134492,57.191864 12.708253,56.415901 12.213036,55.69252 11.705812,54.951599 11.121331,54.25853&#xD;&#xA;10.47876,53.631363 9.8199321,52.988319 9.0937282,52.408287 8.3225938,51.90538 7.5340663,51.391136 6.6911098,50.952583 5.8183457,50.599731 4.9309932,50.24099 4.0045558,49.967438 3.0649797,49.785027 2.3540622,49.647003 1.6307048,49.560188 0.90610206,49.525414 L0.5,49.515656 z M1.5000043,0.5 C36.293946,0.5 64.500001,28.034489 64.500001,62 64.500001,65.184265 64.252099,68.312012 63.774099,71.365845 L63.581609,72.5 43.088803,72.5 43.382062,71.398636 C43.530877,70.781624 43.66504,70.161453 43.784211,69.539108 44.258973,67.059814 44.500001,64.524338 44.500001,62 44.500001,59.318169 44.227632,56.623001 43.69217,53.995171 43.154267,51.355324 42.345597,48.757187 41.293267,46.277122 40.232133,43.776321 38.912912,41.370853 37.37848,39.129089 35.827561,36.863243 34.041818,34.742458 32.076997,32.824417 30.089784,30.884521 27.90046,29.133286 25.574449,27.616096 23.22445,26.083271 20.712861,24.774757&#xD;&#xA;18.111741,23.722992 15.490472,22.663078 12.753976,21.853958 9.9783717,21.314999 7.1912776,20.773811 4.3391505,20.5 1.5000018,20.5 L0.5,20.512039 0.5,0.51235199 z" Fill="{TemplateBinding Foreground}" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5">
+								<Path.RenderTransform>
+									<TransformGroup>
+										<ScaleTransform/>
+										<SkewTransform/>
+										<RotateTransform/>
+										<TranslateTransform/>
+									</TransformGroup>
+								</Path.RenderTransform>
+							</Path>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</Window.Resources>
+    <StackPanel Orientation="Vertical" VerticalAlignment="Bottom">
+        <CheckBox x:Name="newCheckbox" HorizontalAlignment="Center" Height="73" Style="{DynamicResource CheckBoxStyle1}" VerticalAlignment="Center" Width="65" OpacityMask="Black" Background="#FF51FF00" Foreground="#FF0074FF"/>
+        <Button Content="確認(_C)" FontSize="23" Click="Button_Click" />
+    </StackPanel>
+</Window>

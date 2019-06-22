@@ -1,0 +1,22 @@
+﻿<Window x:Class="Demo03_04.WrapPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <WrapPanel Orientation="Horizontal">
+        <Button FontSize="30" Margin="5">Button01</Button>
+        <Button FontSize="30" Margin="5">Button02</Button>
+        <Button FontSize="30" Margin="5">Button03</Button>
+        <Button FontSize="30" Margin="5">Button04</Button>
+        <Button FontSize="30" Margin="5">Button05</Button>
+        <Button FontSize="30" Margin="5">Button06</Button>
+        <Button FontSize="30" Margin="5">Button07</Button>
+        <Button FontSize="30" Margin="5">Button08</Button>
+        <Button FontSize="30" Margin="5">Button09</Button>
+        <Button FontSize="30" Margin="5">Button10</Button>
+        <Button FontSize="30" Margin="5">Button11</Button>
+        <Button FontSize="30" Margin="5">Button12</Button>
+        <Button FontSize="30" Margin="5">Button13</Button>
+        <Button FontSize="30" Margin="5">Button14</Button>
+        <Button FontSize="30" Margin="5">Button15</Button>
+    </WrapPanel>
+</Window>

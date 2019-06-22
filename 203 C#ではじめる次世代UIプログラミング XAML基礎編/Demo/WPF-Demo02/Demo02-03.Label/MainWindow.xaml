@@ -1,0 +1,46 @@
+﻿<Window x:Class="Demo02_03.Label.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- 
+            LabelのContentに_をつけると_の後の文字がアクセスキーとなる 
+            Targetプロパティにアクセスキーを関連付けるコントロールをバインディングする
+            Content中に複数_が現れる場合は最初の_をアクセスキーとみなす
+            アクセスキーではなく、通常の_を表示する場合は_を２回連続して表示する
+            
+        -->
+        <Label Content="_Name" Target="{Binding ElementName=tbName}" />
+        <TextBox Grid.Column="1" Name="tbName" />
+
+        <Label Content="_Office__Address" Grid.Row="1" Target="{Binding ElementName=tbAddress}" />
+        <TextBox Grid.Column="1" Grid.Row="1" Name="tbAddress" />
+        
+        <Label  Grid.Row="2" Target="{Binding ElementName=cbxEnable}">
+            <StackPanel Grid.Row="2" Name="stackPanel1" Orientation="Horizontal">
+                <Ellipse Grid.Row="2" Height="20" Name="ellipse1" Width="20">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="Blue" Offset="0" />
+                            <GradientStop Color="#FFFFE6FF" Offset="1" />
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <AccessText>
+                    _Access Keyを指定する場合はAccessTextコントロールを利用
+                </AccessText>
+            </StackPanel>
+        </Label>
+        <CheckBox Content="有効" Grid.Column="1" Grid.Row="2" Name="cbxEnable" />
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+﻿<Window x:Class="Demo05_02_ICommand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Demo05_02_ICommand"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="コマンド実行" Command="{x:Static local:MainWindow.myCommand}"/>
+
+    </Grid>
+</Window>

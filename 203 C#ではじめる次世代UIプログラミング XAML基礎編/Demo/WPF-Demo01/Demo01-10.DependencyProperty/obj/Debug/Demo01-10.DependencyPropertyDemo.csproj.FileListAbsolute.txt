@@ -1,0 +1,1 @@
+C:\Users\sator\Desktop\マイクロソフトセミナー\203 C#ではじめる次世代UIプログラミング XAML基礎編\203 C#ではじめる次世代UIプログラミング XAML基礎編\Demo\WPF-Demo01\Demo01-10.DependencyProperty\bin\Debug\DependencyPropertyDemo.exe.config

@@ -1,0 +1,23 @@
+﻿<Window x:Class="Demo04_06.DataFlow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Demo04_06.DataFlow"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="30" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="30" />
+        </Style>
+        <local:Person x:Key="PersonData" Name="舞黒太郎" Address="東京都千代田区大手町１－１－３" />
+    </Window.Resources>
+    <StackPanel DataContext="{StaticResource PersonData}">
+        <TextBox x:Name="NameTextBox" Text="{Binding Name,Mode=TwoWay}" />
+        <TextBox x:Name="AddressTextBox" Text="{Binding Address, Mode=OneWay}" />
+        <Button x:Name="ShowDataButton" Click="ShowDataButton_Click">Show Data</Button>
+        <Button x:Name="ResetDataButton" Click="ResetDataButton_Click">Reset Data</Button>
+
+    </StackPanel>
+</Window>

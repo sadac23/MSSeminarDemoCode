@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo03-01-StyleTrigger", "Demo03-01-StyleTrigger\Demo03-01-StyleTrigger.csproj", "{80822981-8220-4504-9AF7-554FDCFCF31D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo03-02-MultiTrigger", "Demo03-02-MultiTrigger\Demo03-02-MultiTrigger.csproj", "{456f473e-cb22-4e2d-b90a-8d8547dcb526}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo03-03-Animation", "Demo03-03-Animation\Demo03-03-Animation.csproj", "{09d61eaa-67fe-42b3-bfad-866753506832}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo03-04-Storyboard", "Demo03-04-Storyboard\Demo03-04-Storyboard.csproj", "{078230c7-b63a-4bd1-841a-848a95b59a03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo03-05-EasingFunction", "Demo03-05-EasingFunction\Demo03-05-EasingFunction.csproj", "{19c92b9f-fdf4-4e12-b714-5cfc7bde5e95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo03-06-DoubleAnimationUsingKeyFrames", "Demo03-06-DoubleAnimationUsingKeyFrames\Demo03-06-DoubleAnimationUsingKeyFrames.csproj", "{b3a76241-cf7d-4fbf-8e2c-ef2fe659ded2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{078230C7-B63A-4BD1-841A-848A95B59A03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078230C7-B63A-4BD1-841A-848A95B59A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078230C7-B63A-4BD1-841A-848A95B59A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078230C7-B63A-4BD1-841A-848A95B59A03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D61EAA-67FE-42B3-BFAD-866753506832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D61EAA-67FE-42B3-BFAD-866753506832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D61EAA-67FE-42B3-BFAD-866753506832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D61EAA-67FE-42B3-BFAD-866753506832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C92B9F-FDF4-4E12-B714-5CFC7BDE5E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C92B9F-FDF4-4E12-B714-5CFC7BDE5E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C92B9F-FDF4-4E12-B714-5CFC7BDE5E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C92B9F-FDF4-4E12-B714-5CFC7BDE5E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{456F473E-CB22-4E2D-B90A-8D8547DCB526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456F473E-CB22-4E2D-B90A-8D8547DCB526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456F473E-CB22-4E2D-B90A-8D8547DCB526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456F473E-CB22-4E2D-B90A-8D8547DCB526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80822981-8220-4504-9AF7-554FDCFCF31D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80822981-8220-4504-9AF7-554FDCFCF31D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80822981-8220-4504-9AF7-554FDCFCF31D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80822981-8220-4504-9AF7-554FDCFCF31D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3A76241-CF7D-4FBF-8E2C-EF2FE659DED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A76241-CF7D-4FBF-8E2C-EF2FE659DED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A76241-CF7D-4FBF-8E2C-EF2FE659DED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A76241-CF7D-4FBF-8E2C-EF2FE659DED2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

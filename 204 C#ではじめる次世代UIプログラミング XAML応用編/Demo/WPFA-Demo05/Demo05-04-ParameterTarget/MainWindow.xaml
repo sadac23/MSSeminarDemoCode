@@ -1,0 +1,22 @@
+﻿<Window x:Class="Demo05_04_ParameterTarget.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Demo05_04_ParameterTarget"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static local:MainWindow.PutHelloCommand}" Executed="CommandBinding_PutHelloExecuted" />
+        <CommandBinding Command="{x:Static local:MainWindow.PutWPFCommand}" Executed="CommandBinding_PutWPFExecuted" />
+    </Window.CommandBindings>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="226*" />
+            <ColumnDefinition Width="277*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBox Name="textBox1" Grid.ColumnSpan="2" />
+        <Button Content="Put Hello" Command="{x:Static local:MainWindow.PutHelloCommand}" CommandParameter="HELLO" Grid.Row="1" Name="button1" />
+        <Button Content="Put WPF" Command="{x:Static local:MainWindow.PutWPFCommand}" CommandTarget="{Binding ElementName=textBox1}" Grid.Column="1" Grid.Row="1" Name="button2" />
+    </Grid></Window>

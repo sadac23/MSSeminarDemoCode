@@ -1,0 +1,21 @@
+﻿<Window x:Class="Demo02_04.TextBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Width="525">
+    <StackPanel x:Name="LayoutRoot">
+        <!--TextBoxコントロールで複数行入力できるようにするには
+        　　Returnの入力を行えるように指定することで可能になる。-->
+        <TextBox AcceptsReturn="True" Height="100" FontSize="20" Margin="5"/>
+
+        <!--TextWrappingプロパティの指定により、折り返しも可能-->
+        <TextBox TextWrapping="Wrap" Height="100" FontSize="20" Margin="5"/>
+
+        <!--スクロールバーの表示はVerticalScrollBarVisibilityプロパティを指定-->
+        <TextBox AcceptsReturn="True" Height="100" FontSize="20" Margin="5"
+                 VerticalScrollBarVisibility="Auto"/>
+
+        <!--純粋なTextBoxとは目的が異なりますが、複数行のテキストの取り扱いはRichTextBoxでも行えます-->
+        <RichTextBox Height="100" Margin="5" />
+    </StackPanel>
+
+</Window>

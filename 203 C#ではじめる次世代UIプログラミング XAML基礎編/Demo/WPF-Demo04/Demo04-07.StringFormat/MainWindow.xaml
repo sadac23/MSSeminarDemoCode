@@ -1,0 +1,17 @@
+﻿<Window x:Class="Demo04_07.StringFormat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Demo04_07.StringFormat"        
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:SampleData x:Key="Sample" IntData="123456" DoubleData="0.78" DateData="2010/06/01" />
+    </Window.Resources>
+    
+    <StackPanel DataContext="{Binding Source={StaticResource Sample}}">
+        <TextBox Text="{Binding DateData, StringFormat=yyyy年MM月dd日hh時mm分ss秒}"/>
+        <TextBox Text="{Binding DateData, StringFormat=ggyyyy年MM月dd日hh時mm分ss秒}"/>
+        <TextBox Text="{Binding IntData, StringFormat={}{0:C}}"/>
+        <TextBox Text="{Binding IntData, StringFormat={}{0:C}}" Language="ja-jp"/>
+        <TextBox Text="{Binding DoubleData, StringFormat=p}"/>
+    </StackPanel>
+</Window>
